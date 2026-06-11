@@ -15,6 +15,9 @@ WealthGPT is an AI-assisted global equity allocation research project. It
 combines live Yahoo Finance data, Modern Portfolio Theory, Black-Litterman
 expected returns, structured OpenAI research views, and a local
 Bloomberg-inspired dashboard.
+<img width="1688" height="901" alt="image" src="https://github.com/user-attachments/assets/6fb97413-704d-4f79-b013-198e9519e293" />
+<img width="1690" height="907" alt="image" src="https://github.com/user-attachments/assets/8181daa1-25ec-4307-ac8e-a8c1a699c880" />
+<img width="1689" height="906" alt="image" src="https://github.com/user-attachments/assets/90291786-214c-40b4-bc16-0ad3024ec568" />
 
 It constructs and compares:
 
