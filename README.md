@@ -212,6 +212,32 @@ Public-safe transcripts and a sample report are available in
 
 ## Full Universe
 
+| Region             |   Count |
+| ------------------ | ------: |
+| US Core            |      90 |
+| US Extension       |      66 |
+| Canada             |      47 |
+| UK                 |      20 |
+| Europe             |      28 |
+| **Total Holdings** | **251** |
+_Note. Two duplicates are present (249)_
+| Sector Group                                            | Count |   % |
+| ------------------------------------------------------- | ----: | --: |
+| Technology / Software                                   |    28 | 11% |
+| Semiconductors & Equipment                              |    20 |  8% |
+| Financials (Banks, Insurance, Asset Managers, Payments) |    34 | 14% |
+| Healthcare / Pharma / Biotech                           |    29 | 12% |
+| Consumer (Staples, Retail, Restaurants, Luxury)         |    34 | 14% |
+| Industrials / Infrastructure / Engineering              |    31 | 12% |
+| Energy                                                  |    18 |  7% |
+| Materials / Mining                                      |    15 |  6% |
+| Utilities                                               |    11 |  4% |
+| Telecom / Media                                         |    15 |  6% |
+| REITs                                                   |     2 |  1% |
+| Transportation / Logistics                              |     8 |  3% |
+| Data / Information Services                             |     6 |  2% |
+| Other Specialized                                       |   0–2 | <1% |
+
 US Main
 | Ticker | Country | Listed Index / Exchange | Sector                          |
 | ------ | ------- | ----------------------- | ------------------------------- |
