@@ -212,6 +212,7 @@ Public-safe transcripts and a sample report are available in
 
 ## Full Universe
 
+US Main
 | Ticker | Country | Listed Index / Exchange | Sector                          |
 | ------ | ------- | ----------------------- | ------------------------------- |
 | AAPL   | USA     | Nasdaq-100 / NASDAQ     | Technology                      |
@@ -302,6 +303,185 @@ Public-safe transcripts and a sample report are available in
 | WFC    | USA     | S&P 500 / NYSE          | Banking                         |
 | WMT    | USA     | Dow Jones / NYSE        | Consumer Staples                |
 | XOM    | USA     | Dow Jones / NYSE        | Energy                          |
+
+US Extension
+| Ticker | Country         | Listed Index / Exchange | Sector                            |
+| ------ | --------------- | ----------------------- | --------------------------------- |
+| ABNB   | USA             | Nasdaq-100 / NASDAQ     | Travel Platform                   |
+| ADI    | USA             | Nasdaq-100 / NASDAQ     | Semiconductors                    |
+| ADP    | USA             | S&P 500 / NASDAQ        | Human Capital Management Software |
+| AEP    | USA             | NASDAQ                  | Electric Utilities                |
+| AKAM   | USA             | NASDAQ                  | Cloud & CDN Services              |
+| ALNY   | USA             | NASDAQ                  | RNA Therapeutics                  |
+| ANSS   | USA             | NASDAQ                  | Engineering Simulation Software   |
+| APP    | USA             | NASDAQ                  | Mobile Advertising Technology     |
+| ARM    | UK / USA        | NASDAQ                  | Semiconductors                    |
+| BKR    | USA             | NASDAQ                  | Oilfield Services                 |
+| BIIB   | USA             | NASDAQ                  | Biotechnology                     |
+| CDW    | USA             | S&P 500 / NASDAQ        | IT Solutions & Distribution       |
+| CHTR   | USA             | NASDAQ                  | Cable & Broadband                 |
+| CPRT   | USA             | NASDAQ                  | Vehicle Auctions                  |
+| CRWD   | USA             | NASDAQ                  | Cybersecurity                     |
+| CSX    | USA             | NASDAQ                  | Railways                          |
+| CTAS   | USA             | Nasdaq-100 / NASDAQ     | Business Services                 |
+| CTSH   | USA             | NASDAQ                  | IT Consulting                     |
+| DASH   | USA             | NASDAQ                  | Food Delivery Platform            |
+| DDOG   | USA             | NASDAQ                  | Cloud Monitoring Software         |
+| DXCM   | USA             | NASDAQ                  | Medical Devices                   |
+| EA     | USA             | NASDAQ                  | Video Games                       |
+| EBAY   | USA             | NASDAQ                  | E-commerce                        |
+| EXC    | USA             | NASDAQ                  | Electric Utilities                |
+| FANG   | USA             | NASDAQ                  | Oil & Gas Exploration             |
+| FAST   | USA             | NASDAQ                  | Industrial Distribution           |
+| FTNT   | USA             | Nasdaq-100 / NASDAQ     | Cybersecurity                     |
+| GFS    | USA             | NASDAQ                  | Semiconductor Foundry             |
+| IDXX   | USA             | NASDAQ                  | Veterinary Diagnostics            |
+| INSM   | USA             | NASDAQ                  | Biotechnology                     |
+| ISRG   | USA             | Nasdaq-100 / NASDAQ     | Surgical Robotics                 |
+| KDP    | USA             | NASDAQ                  | Beverages                         |
+| KLAC   | USA             | Nasdaq-100 / NASDAQ     | Semiconductor Equipment           |
+| LRCX   | USA             | Nasdaq-100 / NASDAQ     | Semiconductor Equipment           |
+| MAR    | USA             | S&P 500 / NASDAQ        | Hotels & Hospitality              |
+| MDB    | USA             | NASDAQ                  | Database Software                 |
+| MDLZ   | USA             | Nasdaq-100 / NASDAQ     | Consumer Staples                  |
+| MELI   | Uruguay         | NASDAQ                  | E-commerce & Fintech              |
+| MCHP   | USA             | Nasdaq-100 / NASDAQ     | Semiconductors                    |
+| MNST   | USA             | Nasdaq-100 / NASDAQ     | Energy Drinks                     |
+| MPWR   | USA             | Nasdaq-100 / NASDAQ     | Analog Semiconductors             |
+| MRVL   | USA             | Nasdaq-100 / NASDAQ     | Semiconductors                    |
+| MU     | USA             | Nasdaq-100 / NASDAQ     | Memory Semiconductors             |
+| NXPI   | Netherlands     | NASDAQ                  | Semiconductors                    |
+| ODFL   | USA             | NASDAQ                  | Logistics                         |
+| ON     | USA             | NASDAQ                  | Semiconductors                    |
+| ORLY   | USA             | NASDAQ                  | Auto Parts Retail                 |
+| PANW   | USA             | Nasdaq-100 / NASDAQ     | Cybersecurity                     |
+| PAYX   | USA             | NASDAQ                  | Payroll Services                  |
+| PCAR   | USA             | Nasdaq-100 / NASDAQ     | Heavy Trucks                      |
+| PDD    | China           | NASDAQ                  | E-commerce                        |
+| PLTR   | USA             | NASDAQ                  | AI & Data Analytics               |
+| REGN   | USA             | NASDAQ                  | Biotechnology                     |
+| ROP    | USA             | S&P 500 / NASDAQ        | Industrial Software               |
+| ROST   | USA             | NASDAQ                  | Discount Retail                   |
+| SHOP   | Canada          | NASDAQ                  | E-commerce Software               |
+| SNPS   | USA             | Nasdaq-100 / NASDAQ     | Electronic Design Automation      |
+| STX    | Ireland         | NASDAQ                  | Data Storage                      |
+| TEAM   | Australia / USA | NASDAQ                  | Collaboration Software            |
+| TTWO   | USA             | NASDAQ                  | Video Games                       |
+| VRSK   | USA             | NASDAQ                  | Data Analytics                    |
+| VRTX   | USA             | NASDAQ                  | Biotechnology                     |
+| WBD    | USA             | NASDAQ                  | Media & Entertainment             |
+| WDAY   | USA             | NASDAQ                  | Enterprise Software               |
+| XEL    | USA             | NASDAQ                  | Electric Utilities                |
+| ZS     | USA             | NASDAQ                  | Cybersecurity                     |
+
+UK
+| Ticker |      Country | Listed Index / Exchange          | Sector                     |
+| ------ | -----------: | -------------------------------- | -------------------------- |
+| AZN.L  |           UK | London Stock Exchange / FTSE 100 | Pharmaceuticals            |
+| ULVR.L |           UK | London Stock Exchange / FTSE 100 | Consumer Staples           |
+| SHEL.L |           UK | London Stock Exchange / FTSE 100 | Energy                     |
+| BP.L   |           UK | London Stock Exchange / FTSE 100 | Energy                     |
+| HSBA.L |           UK | London Stock Exchange / FTSE 100 | Banking                    |
+| GSK.L  |           UK | London Stock Exchange / FTSE 100 | Pharmaceuticals            |
+| RIO.L  |           UK | London Stock Exchange / FTSE 100 | Mining                     |
+| BATS.L |           UK | London Stock Exchange / FTSE 100 | Tobacco                    |
+| DGE.L  |           UK | London Stock Exchange / FTSE 100 | Beverages                  |
+| GLEN.L |           UK | London Stock Exchange / FTSE 100 | Mining / Commodities       |
+| AAL.L  |           UK | London Stock Exchange / FTSE 100 | Mining                     |
+| LSEG.L |           UK | London Stock Exchange / FTSE 100 | Financial Data / Exchanges |
+| NG.L   |           UK | London Stock Exchange / FTSE 100 | Utilities                  |
+| VOD.L  |           UK | London Stock Exchange / FTSE 100 | Telecommunications         |
+| REL.L  |           UK | London Stock Exchange / FTSE 100 | Information Services       |
+| CPG.L  |           UK | London Stock Exchange / FTSE 100 | Business Services          |
+| SMIN.L |           UK | London Stock Exchange / FTSE 100 | Industrial Technology      |
+| IMB.L  |           UK | London Stock Exchange / FTSE 100 | Tobacco                    |
+| CRH.L  | UK / Ireland | London Stock Exchange / FTSE 100 | Building Materials         |
+| SN.L   |           UK | London Stock Exchange / FTSE 100 | Medical Devices            |
+
+EU
+| Ticker  |             Country | Listed Index / Exchange   | Sector                        |
+| ------- | ------------------: | ------------------------- | ----------------------------- |
+| ASML.AS |         Netherlands | Euronext Amsterdam        | Semiconductors                |
+| SAP.DE  |             Germany | Xetra / DAX               | Software                      |
+| SIE.DE  |             Germany | Xetra / DAX               | Industrials                   |
+| AIR.PA  |              France | Euronext Paris / CAC 40   | Aerospace & Defense           |
+| OR.PA   |              France | Euronext Paris / CAC 40   | Consumer Staples              |
+| MC.PA   |              France | Euronext Paris / CAC 40   | Luxury Goods                  |
+| SAN.PA  |              France | Euronext Paris / CAC 40   | Pharmaceuticals               |
+| BNP.PA  |              France | Euronext Paris / CAC 40   | Banking                       |
+| ENGI.PA |              France | Euronext Paris / CAC 40   | Utilities                     |
+| AI.PA   |              France | Euronext Paris / CAC 40   | Industrial Gases              |
+| RMS.PA  |              France | Euronext Paris / CAC 40   | Luxury Goods                  |
+| KER.PA  |              France | Euronext Paris / CAC 40   | Luxury Goods                  |
+| DG.PA   |              France | Euronext Paris / CAC 40   | Construction / Infrastructure |
+| ENEL.MI |               Italy | Borsa Italiana / FTSE MIB | Utilities                     |
+| ISP.MI  |               Italy | Borsa Italiana / FTSE MIB | Banking                       |
+| ENI.MI  |               Italy | Borsa Italiana / FTSE MIB | Energy                        |
+| STLA.MI | Netherlands / Italy | Borsa Italiana / FTSE MIB | Automobiles                   |
+| ABI.BR  |             Belgium | Euronext Brussels         | Beverages                     |
+| DSY.PA  |              France | Euronext Paris / CAC 40   | Software                      |
+| HO.PA   |              France | Euronext Paris / CAC 40   | Aerospace & Defense           |
+| PHIA.AS |         Netherlands | Euronext Amsterdam        | Healthcare Technology         |
+| AD.AS   |         Netherlands | Euronext Amsterdam        | Consumer Staples Retail       |
+| ZURN.SW |         Switzerland | SIX Swiss Exchange        | Insurance                     |
+| NESN.SW |         Switzerland | SIX Swiss Exchange        | Consumer Staples              |
+| NOVN.SW |         Switzerland | SIX Swiss Exchange        | Pharmaceuticals               |
+| ROG.SW  |         Switzerland | SIX Swiss Exchange        | Pharmaceuticals               |
+| UBSG.SW |         Switzerland | SIX Swiss Exchange        | Banking                       |
+| CS.PA   |              France | Euronext Paris / CAC 40   | Insurance                     |
+
+TSX
+| Ticker    | Country | Listed Index / Exchange | Sector                         |
+| --------- | ------- | ----------------------- | ------------------------------ |
+| RY.TO     | Canada  | TSX 60 / TSX            | Banking                        |
+| TD.TO     | Canada  | TSX 60 / TSX            | Banking                        |
+| BMO.TO    | Canada  | TSX 60 / TSX            | Banking                        |
+| BNS.TO    | Canada  | TSX 60 / TSX            | Banking                        |
+| NA.TO     | Canada  | TSX Composite / TSX     | Banking                        |
+| CM.TO     | Canada  | TSX 60 / TSX            | Banking                        |
+| ENB.TO    | Canada  | TSX 60 / TSX            | Energy Infrastructure          |
+| TRP.TO    | Canada  | TSX 60 / TSX            | Energy Infrastructure          |
+| SU.TO     | Canada  | TSX 60 / TSX            | Integrated Energy              |
+| CNQ.TO    | Canada  | TSX 60 / TSX            | Oil & Gas E&P                  |
+| CVE.TO    | Canada  | TSX 60 / TSX            | Oil & Gas E&P                  |
+| TOU.TO    | Canada  | TSX Composite / TSX     | Natural Gas                    |
+| POW.TO    | Canada  | TSX 60 / TSX            | Financial Conglomerate         |
+| SLF.TO    | Canada  | TSX 60 / TSX            | Insurance                      |
+| MFC.TO    | Canada  | TSX 60 / TSX            | Insurance                      |
+| FFH.TO    | Canada  | TSX 60 / TSX            | Insurance / Investment Holding |
+| BAM.TO    | Canada  | TSX 60 / TSX            | Alternative Asset Management   |
+| BN.TO     | Canada  | TSX 60 / TSX            | Diversified Holdings           |
+| BIP-UN.TO | Canada  | TSX Composite / TSX     | Infrastructure                 |
+| FTS.TO    | Canada  | TSX 60 / TSX            | Utilities                      |
+| EMA.TO    | Canada  | TSX 60 / TSX            | Utilities                      |
+| PPL.TO    | Canada  | TSX 60 / TSX            | Utilities                      |
+| TRI.TO    | Canada  | TSX 60 / TSX            | Information Services           |
+| OTEX.TO   | Canada  | TSX 60 / TSX            | Software                       |
+| CSU.TO    | Canada  | TSX 60 / TSX            | Software                       |
+| WCN.TO    | Canada  | TSX 60 / TSX            | Environmental Services         |
+| WSP.TO    | Canada  | TSX 60 / TSX            | Engineering & Consulting       |
+| CNR.TO    | Canada  | TSX 60 / TSX            | Railways                       |
+| CP.TO     | Canada  | TSX 60 / TSX            | Railways                       |
+| ATD.TO    | Canada  | TSX 60 / TSX            | Convenience Retail             |
+| DOL.TO    | Canada  | TSX 60 / TSX            | Discount Retail                |
+| QSR.TO    | Canada  | TSX 60 / TSX            | Restaurants                    |
+| MRU.TO    | Canada  | TSX 60 / TSX            | Grocery Retail                 |
+| SHOP.TO   | Canada  | TSX 60 / TSX            | E-Commerce Software            |
+| GIB-A.TO  | Canada  | TSX 60 / TSX            | IT Services & Consulting       |
+| WN.TO     | Canada  | TSX 60 / TSX            | Grocery Retail                 |
+| WPM.TO    | Canada  | TSX 60 / TSX            | Precious Metals Royalty        |
+| FNV.TO    | Canada  | TSX 60 / TSX            | Precious Metals Royalty        |
+| AEM.TO    | Canada  | TSX 60 / TSX            | Gold Mining                    |
+| ABX.TO    | Canada  | TSX 60 / TSX            | Gold Mining                    |
+| TECK-B.TO | Canada  | TSX 60 / TSX            | Diversified Mining             |
+| NTR.TO    | Canada  | TSX 60 / TSX            | Fertilizers & Agriculture      |
+| FM.TO     | Canada  | TSX 60 / TSX            | Base Metals Mining             |
+| CCO.TO    | Canada  | TSX Composite / TSX     | Uranium Mining                 |
+| BCE.TO    | Canada  | TSX 60 / TSX            | Telecommunications             |
+| T.TO      | Canada  | TSX 60 / TSX            | Telecommunications             |
+| RCI-B.TO  | Canada  | TSX 60 / TSX            | Telecommunications             |
+
+
 
 
 ## Author
