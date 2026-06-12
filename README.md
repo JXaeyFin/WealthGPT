@@ -13,6 +13,8 @@
                     Invest with caution
 ```
 
+For Individual Users, Visit the Website Here! [WealthGPT Website](https://wealthgpt.carrd.co/)
+
 # WealthGPT
 
 WealthGPT is an AI-assisted global equity allocation research project. It
