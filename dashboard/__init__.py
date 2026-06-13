@@ -1,0 +1,1 @@
+"""AlloLabs local dashboard package."""

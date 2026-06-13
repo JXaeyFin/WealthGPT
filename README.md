@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="resources/AlloLabs-logo.png" alt="AlloLabs logo" width="150">
+  <img src="resources/allolabs-logo.png" alt="AlloLabs logo" width="150">
 </p>
 
 # AlloLabs
 
-AlloLabs is an AI-assisted global equity allocation research project. It
+AlloLabs is an AI-assisted global asset-allocation research platform. It
 combines live Yahoo Finance data, Modern Portfolio Theory, Black-Litterman
 expected returns, structured OpenAI, Anthropic Claude, or Google Gemini research views, and a local
 Bloomberg-inspired dashboard.
@@ -29,17 +29,6 @@ stages, training window, and optional out-of-sample analysis.
 > trading system. Review all data, assumptions, generated research, and
 > allocations independently.
 
-## Methodology
-
-1. Download and align adjusted equity prices, retrying symbols omitted by bulk requests.
-2. Estimate annualized historical returns and covariance.
-3. Collect company context and optional structured multi-provider AI views.
-4. Optionally audit the complete generated view set with the global audit model.
-5. Blend views with equilibrium returns using Black-Litterman.
-6. Solve maximum-Sharpe and minimum-volatility portfolios with SLSQP.
-7. Optionally evaluate both portfolios out of sample.
-8. Export dashboard data, allocations, charts, and the PDF report.
-
 ## Features
 
 - Large-cap U.S., Canadian, U.K., European, and international ADR universe
@@ -51,7 +40,7 @@ stages, training window, and optional out-of-sample analysis.
 - Validated and reusable research, sector, and listing caches
 - Optional out-of-sample testing against broad market benchmarks
 - Jobson-Korkie Sharpe-ratio comparisons
-- Eight-page PDF portfolio report and CSV allocation export
+- Multi-page PDF portfolio report and CSV allocation export
 - Local web dashboard with run controls, live terminal relay, report viewer,
   performance chart, market flags, and listing metadata
 - Bundled example portfolios and AI sentiments visible before the first run
@@ -60,8 +49,9 @@ stages, training window, and optional out-of-sample analysis.
 
 ```text
 .
-|-- AlloLabs.py                 # Main research and optimization pipeline
-|-- AlloLabs_report.py          # PDF reporting and sector classification
+|-- allolabs.py                 # Main research and optimization pipeline
+|-- allolabs_company.py         # Company context and market-data helpers
+|-- allolabs_report.py          # PDF reporting and sector classification
 |-- dashboard/
 |   |-- server.py                # Constrained local HTTP runner
 |   |-- runner.py                # Model configuration and result adapter
@@ -74,11 +64,12 @@ stages, training window, and optional out-of-sample analysis.
 |   `-- start-dashboard.ps1
 |-- resources/
 |   |-- company-logos/           # Locally cached universe logos and manifest
-|   `-- AlloLabs-logo.png
+|   `-- allolabs-logo.png
 |-- tests/
 |   `-- test_release.py
 |-- examples/                    # Sanitized transcripts and sample PDF
 |-- start-dashboard.bat
+|-- start-allolabs-dashboard.bat
 |-- requirements.txt
 |-- .env.example
 `-- .github/workflows/ci.yml
@@ -96,7 +87,7 @@ Requirements:
 
 ```bash
 # From your cloned or downloaded repository:
-cd AlloLabs
+cd allolabs
 python -m venv .venv
 ```
 
@@ -131,29 +122,29 @@ The script skips existing PNGs by default and writes coverage details to
 
 ## Run The Model
 
-The standard command-line run uses the defaults defined in `AlloLabs.py`:
+The standard command-line run uses the defaults defined in `allolabs.py`:
 
 ```bash
-python AlloLabs.py
+python allolabs.py
 ```
 
 Runtime settings can be supplied without editing source:
 
 ```powershell
-$env:AlloLabs_TRAINING_YEARS="2"
-$env:AlloLabs_OOS_YEARS="0.5"
-$env:AlloLabs_MAX_POSITION_WEIGHT="0.15"
-$env:AlloLabs_MAX_SECTOR_WEIGHT="0.35"
-$env:AlloLabs_REGULARIZATION="l2"
-$env:AlloLabs_REGULARIZATION_STRENGTH="0.25"
-$env:AlloLabs_GPT_VIEWS="true"
-$env:AlloLabs_RESEARCH_PROVIDER="anthropic"
-$env:AlloLabs_RESEARCH_MODEL="claude-sonnet-4-6"
-$env:AlloLabs_GPT_AUDIT="true"
-$env:AlloLabs_AUDIT_PROVIDER="gemini"
-$env:AlloLabs_GPT_AUDIT_MODEL="gemini-3.1-pro-preview"
-$env:AlloLabs_RESEARCH_TICKERS='["AAPL","MSFT","RY.TO"]'
-python AlloLabs.py
+$env:ALLOLABS_TRAINING_YEARS="2"
+$env:ALLOLABS_OOS_YEARS="0.5"
+$env:ALLOLABS_MAX_POSITION_WEIGHT="0.15"
+$env:ALLOLABS_MAX_SECTOR_WEIGHT="0.35"
+$env:ALLOLABS_REGULARIZATION="l2"
+$env:ALLOLABS_REGULARIZATION_STRENGTH="0.25"
+$env:ALLOLABS_GPT_VIEWS="true"
+$env:ALLOLABS_RESEARCH_PROVIDER="anthropic"
+$env:ALLOLABS_RESEARCH_MODEL="claude-sonnet-4-6"
+$env:ALLOLABS_GPT_AUDIT="true"
+$env:ALLOLABS_AUDIT_PROVIDER="gemini"
+$env:ALLOLABS_GPT_AUDIT_MODEL="gemini-3.1-pro-preview"
+$env:ALLOLABS_RESEARCH_TICKERS='["AAPL","MSFT","RY.TO"]'
+python allolabs.py
 ```
 
 See [.env.example](.env.example) for every supported override.
@@ -196,8 +187,8 @@ If an older dashboard process is still using port `8765`, run:
 .\restart-dashboard.bat
 ```
 
-The legacy `start-AlloLabs-dashboard.bat` and
-`restart-AlloLabs-dashboard.bat` names remain as compatibility aliases.
+The branded `start-allolabs-dashboard.bat` and
+`restart-allolabs-dashboard.bat` launchers are also included.
 
 On any platform:
 
@@ -209,7 +200,7 @@ Open [http://127.0.0.1:8765](http://127.0.0.1:8765). The dashboard validates
 settings, launches the model in a background process, relays terminal output,
 and refreshes the overview and report tabs after completion.
 
-For access beyond localhost, set `AlloLabs_REMOTE_TOKEN`, bind explicitly, and
+For access beyond localhost, set `ALLOLABS_REMOTE_TOKEN`, bind explicitly, and
 place the service behind HTTPS and a firewall:
 
 ```bash
@@ -232,12 +223,14 @@ listing_metadata_cache.json
 portfolio_allocations.csv
 portfolio_vs_markets_oos.png
 sector_cache.json
-AlloLabs_portfolio_report.pdf
+allolabs_portfolio_report.pdf
 ```
 
 The PDF includes portfolio metrics, top holdings, sector exposure,
 concentration, effective holdings, rationales for the eight largest positions,
-and a detailed allocation appendix.
+and a paginated detailed allocation appendix covering positions down to 0.005%
+absolute portfolio weight. The holding-rationale cards use locally bundled
+rounded-square company marks where a cached logo is available.
 
 ## Validation
 
@@ -245,11 +238,22 @@ Run the release checks locally:
 
 ```bash
 python -m unittest discover -s tests -v
-python -m py_compile AlloLabs.py AlloLabs_report.py dashboard/server.py dashboard/runner.py
+python -m py_compile allolabs.py allolabs_report.py dashboard/server.py dashboard/runner.py
 node --check dashboard/app.js
 ```
 
 GitHub Actions runs the same checks on pushes and pull requests.
+
+## Methodology
+
+1. Download and align adjusted equity prices, retrying symbols omitted by bulk requests.
+2. Estimate annualized historical returns and covariance.
+3. Collect company context and optional structured multi-provider AI views.
+4. Optionally audit the complete generated view set with the global audit model.
+5. Blend views with equilibrium returns using Black-Litterman.
+6. Solve maximum-Sharpe and minimum-volatility portfolios with SLSQP.
+7. Optionally evaluate both portfolios out of sample.
+8. Export dashboard data, allocations, charts, and the PDF report.
 
 ## Limitations
 
