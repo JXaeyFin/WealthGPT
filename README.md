@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="resources/wealthgpt-logo.png" alt="WealthGPT logo" width="150">
+  <img src="resources/AlloLabs-logo.png" alt="AlloLabs logo" width="150">
 </p>
 
-# WealthGPT
+# AlloLabs
 
-WealthGPT is an AI-assisted global equity allocation research project. It
+AlloLabs is an AI-assisted global equity allocation research project. It
 combines live Yahoo Finance data, Modern Portfolio Theory, Black-Litterman
 expected returns, structured OpenAI, Anthropic Claude, or Google Gemini research views, and a local
 Bloomberg-inspired dashboard.
@@ -25,7 +25,7 @@ The Run Console includes a milestone-driven estimated progress bar. Its pacing
 adapts to the selected research universe, cache refresh, AI research and audit
 stages, training window, and optional out-of-sample analysis.
 
-> **Research software only.** WealthGPT is not financial advice or an automated
+> **Research software only.** AlloLabs is not financial advice or an automated
 > trading system. Review all data, assumptions, generated research, and
 > allocations independently.
 
@@ -60,8 +60,8 @@ stages, training window, and optional out-of-sample analysis.
 
 ```text
 .
-|-- wealthgpt.py                 # Main research and optimization pipeline
-|-- wealthgpt_report.py          # PDF reporting and sector classification
+|-- AlloLabs.py                 # Main research and optimization pipeline
+|-- AlloLabs_report.py          # PDF reporting and sector classification
 |-- dashboard/
 |   |-- server.py                # Constrained local HTTP runner
 |   |-- runner.py                # Model configuration and result adapter
@@ -74,7 +74,7 @@ stages, training window, and optional out-of-sample analysis.
 |   `-- start-dashboard.ps1
 |-- resources/
 |   |-- company-logos/           # Locally cached universe logos and manifest
-|   `-- wealthgpt-logo.png
+|   `-- AlloLabs-logo.png
 |-- tests/
 |   `-- test_release.py
 |-- examples/                    # Sanitized transcripts and sample PDF
@@ -96,7 +96,7 @@ Requirements:
 
 ```bash
 # From your cloned or downloaded repository:
-cd wealthgpt
+cd AlloLabs
 python -m venv .venv
 ```
 
@@ -131,29 +131,29 @@ The script skips existing PNGs by default and writes coverage details to
 
 ## Run The Model
 
-The standard command-line run uses the defaults defined in `wealthgpt.py`:
+The standard command-line run uses the defaults defined in `AlloLabs.py`:
 
 ```bash
-python wealthgpt.py
+python AlloLabs.py
 ```
 
 Runtime settings can be supplied without editing source:
 
 ```powershell
-$env:WEALTHGPT_TRAINING_YEARS="2"
-$env:WEALTHGPT_OOS_YEARS="0.5"
-$env:WEALTHGPT_MAX_POSITION_WEIGHT="0.15"
-$env:WEALTHGPT_MAX_SECTOR_WEIGHT="0.35"
-$env:WEALTHGPT_REGULARIZATION="l2"
-$env:WEALTHGPT_REGULARIZATION_STRENGTH="0.25"
-$env:WEALTHGPT_GPT_VIEWS="true"
-$env:WEALTHGPT_RESEARCH_PROVIDER="anthropic"
-$env:WEALTHGPT_RESEARCH_MODEL="claude-sonnet-4-6"
-$env:WEALTHGPT_GPT_AUDIT="true"
-$env:WEALTHGPT_AUDIT_PROVIDER="gemini"
-$env:WEALTHGPT_GPT_AUDIT_MODEL="gemini-3.1-pro-preview"
-$env:WEALTHGPT_RESEARCH_TICKERS='["AAPL","MSFT","RY.TO"]'
-python wealthgpt.py
+$env:AlloLabs_TRAINING_YEARS="2"
+$env:AlloLabs_OOS_YEARS="0.5"
+$env:AlloLabs_MAX_POSITION_WEIGHT="0.15"
+$env:AlloLabs_MAX_SECTOR_WEIGHT="0.35"
+$env:AlloLabs_REGULARIZATION="l2"
+$env:AlloLabs_REGULARIZATION_STRENGTH="0.25"
+$env:AlloLabs_GPT_VIEWS="true"
+$env:AlloLabs_RESEARCH_PROVIDER="anthropic"
+$env:AlloLabs_RESEARCH_MODEL="claude-sonnet-4-6"
+$env:AlloLabs_GPT_AUDIT="true"
+$env:AlloLabs_AUDIT_PROVIDER="gemini"
+$env:AlloLabs_GPT_AUDIT_MODEL="gemini-3.1-pro-preview"
+$env:AlloLabs_RESEARCH_TICKERS='["AAPL","MSFT","RY.TO"]'
+python AlloLabs.py
 ```
 
 See [.env.example](.env.example) for every supported override.
@@ -196,8 +196,8 @@ If an older dashboard process is still using port `8765`, run:
 .\restart-dashboard.bat
 ```
 
-The legacy `start-wealthgpt-dashboard.bat` and
-`restart-wealthgpt-dashboard.bat` names remain as compatibility aliases.
+The legacy `start-AlloLabs-dashboard.bat` and
+`restart-AlloLabs-dashboard.bat` names remain as compatibility aliases.
 
 On any platform:
 
@@ -209,7 +209,7 @@ Open [http://127.0.0.1:8765](http://127.0.0.1:8765). The dashboard validates
 settings, launches the model in a background process, relays terminal output,
 and refreshes the overview and report tabs after completion.
 
-For access beyond localhost, set `WEALTHGPT_REMOTE_TOKEN`, bind explicitly, and
+For access beyond localhost, set `AlloLabs_REMOTE_TOKEN`, bind explicitly, and
 place the service behind HTTPS and a firewall:
 
 ```bash
@@ -232,7 +232,7 @@ listing_metadata_cache.json
 portfolio_allocations.csv
 portfolio_vs_markets_oos.png
 sector_cache.json
-wealthgpt_portfolio_report.pdf
+AlloLabs_portfolio_report.pdf
 ```
 
 The PDF includes portfolio metrics, top holdings, sector exposure,
@@ -245,7 +245,7 @@ Run the release checks locally:
 
 ```bash
 python -m unittest discover -s tests -v
-python -m py_compile wealthgpt.py wealthgpt_report.py dashboard/server.py dashboard/runner.py
+python -m py_compile AlloLabs.py AlloLabs_report.py dashboard/server.py dashboard/runner.py
 node --check dashboard/app.js
 ```
 
