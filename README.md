@@ -29,6 +29,17 @@ stages, training window, and optional out-of-sample analysis.
 > trading system. Review all data, assumptions, generated research, and
 > allocations independently.
 
+## Methodology
+
+1. Download and align adjusted equity prices, retrying symbols omitted by bulk requests.
+2. Estimate annualized historical returns and covariance.
+3. Collect company context and optional structured multi-provider AI views.
+4. Optionally audit the complete generated view set with the global audit model.
+5. Blend views with equilibrium returns using Black-Litterman.
+6. Solve maximum-Sharpe and minimum-volatility portfolios with SLSQP.
+7. Optionally evaluate both portfolios out of sample.
+8. Export dashboard data, allocations, charts, and the PDF report.
+
 ## Features
 
 - Large-cap U.S., Canadian, U.K., European, and international ADR universe
@@ -239,17 +250,6 @@ node --check dashboard/app.js
 ```
 
 GitHub Actions runs the same checks on pushes and pull requests.
-
-## Methodology
-
-1. Download and align adjusted equity prices, retrying symbols omitted by bulk requests.
-2. Estimate annualized historical returns and covariance.
-3. Collect company context and optional structured multi-provider AI views.
-4. Optionally audit the complete generated view set with the global audit model.
-5. Blend views with equilibrium returns using Black-Litterman.
-6. Solve maximum-Sharpe and minimum-volatility portfolios with SLSQP.
-7. Optionally evaluate both portfolios out of sample.
-8. Export dashboard data, allocations, charts, and the PDF report.
 
 ## Limitations
 
